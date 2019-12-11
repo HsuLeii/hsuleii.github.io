@@ -1,0 +1,80 @@
+@media screen and (orientation: portrait) { html{ width : 100vmin; height : 100vmax; } body{ width : 100vmin; height : 100vmax; } #gyroContain{ width : 100vmax; height : 100vmin; transform-origin: top left; transform: rotate(90deg) translate(0,-100vmin); } } @media screen and (orientation: landscape) { html{ width : 100vmax; height : 100vmin; } body{ width : 100vmax; height : 100vmin; } #gyroContain{ width : 100vmax; height : 100vmin; } }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 15px;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+body{background-color: #bac9d2;
+background-image: linear-gradient(0deg, #bac9d2 0%, #61829e 33%, #3a6791 66%);
+height:100vh;
+}
+
+p{
+color: white;
+font-size:12vw;
+  letter-spacing:10px;
+  font-family: 'Lilita One', cursive;
+  font-family: 'Bebas Neue', cursive;
+  animation-name:oxxo;
+    animation-duration:1s;
+  animation-iteration-count: infinite;
+  text-align: center;
+}
+@keyframes oxxo{
+    from{
+        text-shadow: 7px 5px 0px #4eb243, -7px -5px 0 #d43a77;
+    }
+    to{
+        text-shadow: none;
+    }
+}
+h1{
+color: white;
+font-size:100vw;
+}
+.text{display:flex;
+ justify-content:flex-start;
+}
