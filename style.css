@@ -1,67 +1,76 @@
-@media screen and (orientation: portrait) { html{ width : 100vmin; height : 100vmax; } body{ width : 100vmin; height : 100vmax; } #gyroContain{ width : 100vmax; height : 100vmin; transform-origin: top left; transform: rotate(90deg) translate(0,-100vmin); } } @media screen and (orientation: landscape) { html{ width : 100vmax; height : 100vmin; } body{ width : 100vmax; height : 100vmin; } #gyroContain{ width : 100vmax; height : 100vmin; } }
+.btn-box {
+  display:flex;
+  vertical-align:middle;
+  width: 50px;
+  height: 20px;
+  border-radius:100px;
+  background-color: #ccc;
+  box-shadow: 0px 3px 0px rgba(0,0,0,.13) inset;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: relative;
+  font-family: 'Inconsolata', monospace;
+}
+.btn-box .btn {
+display:inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  background-color: #fff;
+  margin-left: -10px;/*動畫從ml為0開始*/
+  transition: .5s;
+  box-shadow:1px 2px 5px rgba(0,0,0,.3);
+  position: absolute;
+}
+.off_text, .on_text{align-self: center;}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 15px;
-    font: inherit;
-    vertical-align: baseline;
+.checkbox {
+  position:absolute;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
+.checkbox:checked + .btn-box {
+  background-color: #8f8;
 }
 
-body {
-    line-height: 1;
+.checkbox:checked + .btn-box .btn {
+  margin-left: 40px;
 }
-ol, ul {
-    list-style: none;
+
+.checkbox:checked + .btn-box .on_text {
+  margin-left: 20px;
+  visibility: hidden;
 }
-blockquote, q {
-    quotes: none;
+.checkbox:not(:checked) + .btn-box .off_text {
+  visibility: hidden;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+.bg{
+  background:red;
+  width:100%;
+    height:50px;
+  display:none;
 }
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
+.bb{
+  background:blue;
+  width:100%;
+    height:50px;
+  
+}
+.contaner{
+  display:flex;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
-body{background-color: #bac9d2;
-background-image: linear-gradient(0deg, #bac9d2 0%, #61829e 33%, #3a6791 66%);
-height:100vh;
-}
 
-p{
+body{background:black;}
+.pp{
 color: white;
-font-size:12vw;
+font-size:100px;
   letter-spacing:10px;
   font-family: 'Lilita One', cursive;
   font-family: 'Bebas Neue', cursive;
   animation-name:oxxo;
-    animation-duration:1s;
+    animation-duration:0s;
   animation-iteration-count: infinite;
-  text-align: center;
+  margin-top:-50px;
 }
 @keyframes oxxo{
     from{
@@ -70,11 +79,4 @@ font-size:12vw;
     to{
         text-shadow: none;
     }
-}
-h1{
-color: white;
-font-size:100vw;
-}
-.text{display:flex;
- justify-content:flex-start;
 }
