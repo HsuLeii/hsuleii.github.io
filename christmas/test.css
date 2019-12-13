@@ -115,6 +115,7 @@ display:inline-block;
     margin:0 auto;
     position: relative;
     top:20px;
+    z-index: 10;
 }
 .headline-text{
 color: white;
@@ -410,7 +411,7 @@ font-size:12vw;
     margin: auto;
 }
 .straight img{
-width: 100%;
+max-width: 100%;
 animation-name:phone;
   animation-duration:2s;
   animation-iteration-count: infinite;
