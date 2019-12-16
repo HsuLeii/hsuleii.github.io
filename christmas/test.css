@@ -438,5 +438,29 @@ animation-name:phone;
     transform:translateY(100vh);
     }
   }
+  @-webkit-keyframes Blink {
+    from{
+        filter: brightness(100%);
+    }
+  to{
+    filter: brightness(130%);
+  }
+  }
+  @-moz-keyframes Blink {
+    from{
+      filter: brightness(100%);
+  }
+to{
+  filter: brightness(130%);
+}
+}
+  @keyframes Blink {
+    from{
+      filter: brightness(100%);
+  }
+to{
+  filter: brightness(130%);
+}
+}
 
 
