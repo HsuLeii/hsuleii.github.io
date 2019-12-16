@@ -403,7 +403,7 @@ font-size:12vw;
     position: absolute;
     top:0;
     z-index: 11;
-    display: flex;
+    
 }
 .straight{
     max-width: 30%;
