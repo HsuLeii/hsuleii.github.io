@@ -18,3 +18,5 @@ checkbox.addEventListener('change', (e) => {
     snowbg.style.display = "none";
   }
 })
+$("html").css("height":"100%","overflow-y":"hidden"});
+$("body").css({"height":"100%","overflow-y":"hidden"});
