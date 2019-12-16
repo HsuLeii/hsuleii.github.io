@@ -405,7 +405,7 @@ font-size:12vw;
     display: flex;
 }
 .straight{
-    width: 30%;
+    max-width: 30%;
     display: flex;
     margin: auto;
 }
