@@ -375,7 +375,7 @@ font-size:9vw;
         width: 30px;
         background-color: #fbc02d;
         animation-name:Blink;
-        animation-duration:0s;
+        animation-duration:0.5s;
         animation-iteration-count: infinite;
     position: absolute;
     top:-20px;
