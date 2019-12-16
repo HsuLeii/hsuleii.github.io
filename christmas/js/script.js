@@ -7,8 +7,8 @@ checkbox.addEventListener('change', (e) => {
   if (e.target.checked) {
     headline.style.webkitAnimationDuration = "1s";
     headline.style.AnimationDuration = "1s"; 
-    light.style.webkitAnimationDuration = "1s"; 
-    light.style.AnimationDuration = "1s"; 
+    light.style.webkitAnimationDuration = "0.5s"; 
+    light.style.AnimationDuration = "0.5s"; 
     snowbg.style.display = "block";
   } else {
     headline.style.webkitAnimationDuration = "0s";
