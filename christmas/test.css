@@ -407,7 +407,7 @@ font-size:12vw;
 }
 .straight{
     max-width: 30%;
-    display: block;
+    display: flex;
     margin: auto;
 }
 .straight img{
