@@ -380,6 +380,7 @@ font-size:9vw;
     position: absolute;
     top:-20px;
     left: 43%;
+    z-index: 0;
     -webkit-animation-play-state: paused; 
     animation-play-state: paused;
     -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
