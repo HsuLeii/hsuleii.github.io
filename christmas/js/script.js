@@ -5,12 +5,16 @@ const light = document.querySelector('.light')
 
 checkbox.addEventListener('change', (e) => {
   if (e.target.checked) {
-    headline.style.webkitAnimationDuration = "1s"; 
+    headline.style.webkitAnimationDuration = "1s";
+    headline.style.AnimationDuration = "1s"; 
     light.style.webkitAnimationDuration = "0.5s"; 
+    light.style.AnimationDuration = "0.5s"; 
     snowbg.style.display = "block";
   } else {
     headline.style.webkitAnimationDuration = "0s";
+    headline.style.AnimationDuration = "0s";
     light.style.webkitAnimationDuration = "0s"; 
+    light.style.AnimationDuration = "0s"; 
     snowbg.style.display = "none";
   }
 })
