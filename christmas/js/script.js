@@ -7,14 +7,14 @@ checkbox.addEventListener('change', (e) => {
   if (e.target.checked) {
     headline.style.webkitAnimationDuration = "1s";
     headline.style.AnimationDuration = "1s"; 
-    light.style.webkitAnimationDuration = "0.5s"; 
-    light.style.AnimationDuration = "0.5s"; 
+    light.style.webkitAnimationPlayState = "running";
+    light.style.AnimationDuration = "running"; 
     snowbg.style.display = "block";
   } else {
     headline.style.webkitAnimationDuration = "0s";
     headline.style.AnimationDuration = "0s";
-    light.style.webkitAnimationDuration = "0s"; 
-    light.style.AnimationDuration = "0s"; 
+    light.style.webkitAnimationPlayState = "paused";
+    light.style.AnimationDuration = "paused"; 
     snowbg.style.display = "none";
   }
 })
