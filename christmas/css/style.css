@@ -55,6 +55,7 @@ body{
     width: 100%;
     position: absolute;
     bottom: -200px;
+    overflow: hidden;
 }
 .switch{
     position: absolute;
