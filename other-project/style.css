@@ -1,0 +1,82 @@
+.btn-box {
+  display:flex;
+  vertical-align:middle;
+  width: 50px;
+  height: 20px;
+  border-radius:100px;
+  background-color: #ccc;
+  box-shadow: 0px 3px 0px rgba(0,0,0,.13) inset;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: relative;
+  font-family: 'Inconsolata', monospace;
+}
+.btn-box .btn {
+display:inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  background-color: #fff;
+  margin-left: -10px;/*動畫從ml為0開始*/
+  transition: .5s;
+  box-shadow:1px 2px 5px rgba(0,0,0,.3);
+  position: absolute;
+}
+.off_text, .on_text{align-self: center;}
+
+.checkbox {
+  position:absolute;
+}
+.checkbox:checked + .btn-box {
+  background-color: #8f8;
+}
+
+.checkbox:checked + .btn-box .btn {
+  margin-left: 40px;
+}
+
+.checkbox:checked + .btn-box .on_text {
+  margin-left: 20px;
+  visibility: hidden;
+}
+.checkbox:not(:checked) + .btn-box .off_text {
+  visibility: hidden;
+}
+.bg{
+  background:red;
+  width:100%;
+    height:50px;
+  display:none;
+}
+.bb{
+  background:blue;
+  width:100%;
+    height:50px;
+  
+}
+.contaner{
+  display:flex;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+
+body{background:black;}
+.pp{
+color: white;
+font-size:100px;
+  letter-spacing:10px;
+  font-family: 'Lilita One', cursive;
+  font-family: 'Bebas Neue', cursive;
+  animation-name:oxxo;
+    animation-duration:0s;
+  animation-iteration-count: infinite;
+  margin-top:-50px;
+}
+@keyframes oxxo{
+    from{
+        text-shadow: 7px 5px 0px #4eb243, -7px -5px 0 #d43a77;
+    }
+    to{
+        text-shadow: none;
+    }
+}
