@@ -44,11 +44,12 @@ table {
     border-spacing: 0;
 }
 body{
+    overflow: hidden;
     background-color: #bac9d2;
     background-image: linear-gradient(0deg, #bac9d2 0%, #61829e 33%, #3a6791 66%);
     height:100vh;background-color: #bac9d2;
     background-image: linear-gradient(0deg, #bac9d2 0%, #61829e 33%, #3a6791 66%);
-    height:80vh;
+    height:90vh;
     width: 100%;
 }
 .bg img{
@@ -117,7 +118,7 @@ display:inline-block;
 }
 .headline-text{
 color: white;
-font-size:9vw;
+font-size:11vw;
   letter-spacing:10px;
   font-family: 'Fugaz One', cursive;
   animation-name:ooxx;
@@ -138,7 +139,7 @@ font-size:9vw;
      position:fixed;
      top:-60px;
      display:none;
-     z-index: 9;
+     z-index:9;
     }
     
     .snow li{
@@ -363,40 +364,39 @@ font-size:9vw;
       background-color: white;
     }
     .tree{
-      position: absolute;
+        position: absolute;
     right: 0;
-    bottom: 0px;
-    max-width: 120px;
+    bottom: 0;
+    max-width: 200px;
     }
     .tree img{
         width:100%;
     }
     .light {
-        height: 30px;
-        width: 30px;
-        background-color: #fbc02d;
-        animation-name:Blink;
-        animation-duration:0.5s;
-        animation-iteration-count: infinite;
-    position: absolute;
-    z-index: 8;
-    top:-20px;
-    left: 43%;
-    z-index: 0;
-    -webkit-animation-play-state: paused; 
-    animation-play-state: paused;
-    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      height: 60px;
+      width: 60px;
+      background-color: #fbc02d;
+  animation-name:Blink;
+  animation-duration:0.5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  z-index: 8;
+  top:-40px;
+  left: 40%;
+  -webkit-animation-play-state: paused; 
+  animation-play-state: paused;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     }
     .man{
-    max-width: 180px;
+      max-width: 400px;
     position: absolute;
     bottom: 0;
     left: 30px;
-    }
-    .man img{
-    width: 100%;
-    }
+      }
+      .man img{
+      width: 100%;
+      }
     @media screen and (orientation: portrait)  {
     .straight-body{
     background-color: black;
@@ -405,15 +405,15 @@ font-size:9vw;
     position: absolute;
     top:0;
     z-index: 11;
-    
+    display: flex;
 }
 .straight{
-    max-width: 30%;
-    display: block;
+    width: 30%;
+    display: flex;
     margin: auto;
 }
 .straight img{
-max-width: 100%;
+width: 100%;
 animation-name:phone;
   animation-duration:2s;
   animation-iteration-count: infinite;
@@ -467,5 +467,4 @@ to{
   filter: brightness(130%);
 }
 }
-
 
