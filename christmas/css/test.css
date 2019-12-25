@@ -408,11 +408,13 @@ font-size:9vw;
     
 }
 .straight{
-    display: flex;
-    margin: auto;
+  display: flex;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  z-index: 12;
 }
 .straight img{
-  max-width: 50%;
   margin:0 auto;}
   }
 @keyframes ooxx{
