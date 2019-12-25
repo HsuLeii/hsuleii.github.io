@@ -414,10 +414,15 @@ font-size:11vw;
     height: 80px;
     z-index: 12;
     position: relative;
+    flex-direction: column;
 }
 .straight img{
   width: 100%;
 margin:auto;
+}
+.straight p{
+  font-size: 8px;
+  color:white;
 }
   }
 @keyframes ooxx{
