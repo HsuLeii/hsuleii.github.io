@@ -380,7 +380,7 @@ font-size:11vw;
   animation-duration:0.5s;
   animation-iteration-count: infinite;
   position: absolute;
-  z-index: 8;
+  z-index: 4;
   top:-40px;
   left: 40%;
   -webkit-animation-play-state: paused; 
@@ -408,12 +408,12 @@ font-size:11vw;
     display: flex;
 }
 .straight{
-    width: 30%;
     display: flex;
     margin: auto;
 }
 .straight img{
-width: 100%;
+width: 50%;
+margin:0 auto;
 }
   }
 @keyframes ooxx{

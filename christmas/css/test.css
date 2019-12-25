@@ -382,7 +382,7 @@ font-size:9vw;
     z-index: 8;
     top:-20px;
     left: 43%;
-    z-index: 0;
+    z-index: 4;
     -webkit-animation-play-state: paused; 
     animation-play-state: paused;
     -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
@@ -408,13 +408,12 @@ font-size:9vw;
     
 }
 .straight{
-    max-width: 30%;
     display: block;
     margin: auto;
 }
 .straight img{
-max-width: 100%;
-}
+  width: 50%;
+  margin:0 auto;}
   }
 @keyframes ooxx{
     from{
