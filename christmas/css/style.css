@@ -398,6 +398,9 @@ font-size:11vw;
       width: 100%;
       }
     @media screen and (orientation: portrait)  {
+      .light{
+        display: none;
+      }
     .straight-body{
     background-color: black;
     width:100vw;
