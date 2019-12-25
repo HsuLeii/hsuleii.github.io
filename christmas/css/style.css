@@ -422,7 +422,8 @@ margin:auto;
 .straight p{
   font-size: 8px;
   color:white;
-  width: 100%;
+  width: 100vw;
+  text-align: center;
 }
   }
 @keyframes ooxx{
