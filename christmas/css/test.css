@@ -405,7 +405,6 @@ font-size:9vw;
     position: absolute;
     top:0;
     z-index: 11;
-    
 }
 .straight{
   display: flex;
@@ -413,6 +412,8 @@ font-size:9vw;
   width: 80px;
   height: 80px;
   z-index: 12;
+  position: relative;
+
 }
 .straight img{
   width: 100%;
