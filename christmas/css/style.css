@@ -410,11 +410,12 @@ font-size:11vw;
 .straight{
     display: flex;
     margin: auto;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     z-index: 12;
 }
 .straight img{
+  width: 100%;
 margin:auto;
 }
   }
