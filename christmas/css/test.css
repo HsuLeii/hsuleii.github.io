@@ -408,11 +408,11 @@ font-size:9vw;
     
 }
 .straight{
-    display: block;
+    display: flex;
     margin: auto;
 }
 .straight img{
-  width: 50%;
+  max-width: 50%;
   margin:0 auto;}
   }
 @keyframes ooxx{

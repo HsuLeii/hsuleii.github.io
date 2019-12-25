@@ -412,7 +412,7 @@ font-size:11vw;
     margin: auto;
 }
 .straight img{
-width: 50%;
+max-width: 50%;
 margin:0 auto;
 }
   }
