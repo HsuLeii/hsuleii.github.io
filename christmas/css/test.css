@@ -414,9 +414,6 @@ font-size:9vw;
 }
 .straight img{
 max-width: 100%;
-animation-name:phone;
-  animation-duration:2s;
-  animation-iteration-count: infinite;
 }
   }
 @keyframes ooxx{
